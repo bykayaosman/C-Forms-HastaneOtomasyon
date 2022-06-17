@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DEE507F1-753B-4D1B-9346-886B0D045DE4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hospital</RootNamespace>
+    <AssemblyName>Hospital</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frAcilMuayene.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frAcilMuayene.Designer.cs">
+      <DependentUpon>frAcilMuayene.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frBekleyenHastalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frBekleyenHastalar.Designer.cs">
+      <DependentUpon>frBekleyenHastalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frDoktor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frDoktor.Designer.cs">
+      <DependentUpon>frDoktor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frDoktorAcil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frDoktorAcil.Designer.cs">
+      <DependentUpon>frDoktorAcil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frDoktorBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frDoktorBilgileri.Designer.cs">
+      <DependentUpon>frDoktorBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frDoktorRandevuGoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frDoktorRandevuGoruntule.Designer.cs">
+      <DependentUpon>frDoktorRandevuGoruntule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frDoktorRandevuSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frDoktorRandevuSil.Designer.cs">
+      <DependentUpon>frDoktorRandevuSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frDoktorTahlilSonucları.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frDoktorTahlilSonucları.Designer.cs">
+      <DependentUpon>frDoktorTahlilSonucları.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frEleman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frEleman.Designer.cs">
+      <DependentUpon>frEleman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frGecmisTedaviler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frGecmisTedaviler.Designer.cs">
+      <DependentUpon>frGecmisTedaviler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frGiris.Designer.cs">
+      <DependentUpon>frGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frHasta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frHasta.Designer.cs">
+      <DependentUpon>frHasta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frHastaBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frHastaBilgileri.Designer.cs">
+      <DependentUpon>frHastaBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frHastaKabul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frHastaKabul.Designer.cs">
+      <DependentUpon>frHastaKabul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frHastaLab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frHastaLab.Designer.cs">
+      <DependentUpon>frHastaLab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frHastaRecete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frHastaRecete.Designer.cs">
+      <DependentUpon>frHastaRecete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frIletisim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frIletisim.Designer.cs">
+      <DependentUpon>frIletisim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frKaydol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frKaydol.Designer.cs">
+      <DependentUpon>frKaydol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frLaboratuvar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frLaboratuvar.Designer.cs">
+      <DependentUpon>frLaboratuvar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frLabSonuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frLabSonuc.Designer.cs">
+      <DependentUpon>frLabSonuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frMuayene.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frMuayene.Designer.cs">
+      <DependentUpon>frMuayene.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frRandevuAl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frRandevuAl.Designer.cs">
+      <DependentUpon>frRandevuAl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frRandevuGoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frRandevuGoruntule.Designer.cs">
+      <DependentUpon>frRandevuGoruntule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frRandevuMuayene.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frRandevuMuayene.Designer.cs">
+      <DependentUpon>frRandevuMuayene.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frRandevuSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frRandevuSil.Designer.cs">
+      <DependentUpon>frRandevuSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frSifre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frSifre.Designer.cs">
+      <DependentUpon>frSifre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frVezne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frVezne.Designer.cs">
+      <DependentUpon>frVezne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frYatanHasta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frYatanHasta.Designer.cs">
+      <DependentUpon>frYatanHasta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frYatanTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frYatanTest.Designer.cs">
+      <DependentUpon>frYatanTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frYonetici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frYonetici.Designer.cs">
+      <DependentUpon>frYonetici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frYoneticiBilgiler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frYoneticiBilgiler.Designer.cs">
+      <DependentUpon>frYoneticiBilgiler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frYoneticiDoktor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frYoneticiDoktor.Designer.cs">
+      <DependentUpon>frYoneticiDoktor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frYoneticiHastalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frYoneticiHastalar.Designer.cs">
+      <DependentUpon>frYoneticiHastalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frYoneticiIletisim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frYoneticiIletisim.Designer.cs">
+      <DependentUpon>frYoneticiIletisim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frYoneticiKlinikler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frYoneticiKlinikler.Designer.cs">
+      <DependentUpon>frYoneticiKlinikler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HOSPITALDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HOSPITALDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Query.cs" />
+    <EmbeddedResource Include="frAcilMuayene.resx">
+      <DependentUpon>frAcilMuayene.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frBekleyenHastalar.resx">
+      <DependentUpon>frBekleyenHastalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frDoktor.resx">
+      <DependentUpon>frDoktor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frDoktorAcil.resx">
+      <DependentUpon>frDoktorAcil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frDoktorBilgileri.resx">
+      <DependentUpon>frDoktorBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frDoktorRandevuGoruntule.resx">
+      <DependentUpon>frDoktorRandevuGoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frDoktorRandevuSil.resx">
+      <DependentUpon>frDoktorRandevuSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frDoktorTahlilSonucları.resx">
+      <DependentUpon>frDoktorTahlilSonucları.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frEleman.resx">
+      <DependentUpon>frEleman.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frGecmisTedaviler.resx">
+      <DependentUpon>frGecmisTedaviler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frGiris.resx">
+      <DependentUpon>frGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frHasta.resx">
+      <DependentUpon>frHasta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frHastaBilgileri.resx">
+      <DependentUpon>frHastaBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frHastaKabul.resx">
+      <DependentUpon>frHastaKabul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frHastaLab.resx">
+      <DependentUpon>frHastaLab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frHastaRecete.resx">
+      <DependentUpon>frHastaRecete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frIletisim.resx">
+      <DependentUpon>frIletisim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frKaydol.resx">
+      <DependentUpon>frKaydol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frLaboratuvar.resx">
+      <DependentUpon>frLaboratuvar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frLabSonuc.resx">
+      <DependentUpon>frLabSonuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frMuayene.resx">
+      <DependentUpon>frMuayene.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frRandevuAl.resx">
+      <DependentUpon>frRandevuAl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frRandevuGoruntule.resx">
+      <DependentUpon>frRandevuGoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frRandevuMuayene.resx">
+      <DependentUpon>frRandevuMuayene.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frRandevuSil.resx">
+      <DependentUpon>frRandevuSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frSifre.resx">
+      <DependentUpon>frSifre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frVezne.resx">
+      <DependentUpon>frVezne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frYatanHasta.resx">
+      <DependentUpon>frYatanHasta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frYatanTest.resx">
+      <DependentUpon>frYatanTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frYonetici.resx">
+      <DependentUpon>frYonetici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frYoneticiBilgiler.resx">
+      <DependentUpon>frYoneticiBilgiler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frYoneticiDoktor.resx">
+      <DependentUpon>frYoneticiDoktor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frYoneticiHastalar.resx">
+      <DependentUpon>frYoneticiHastalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frYoneticiIletisim.resx">
+      <DependentUpon>frYoneticiIletisim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frYoneticiKlinikler.resx">
+      <DependentUpon>frYoneticiKlinikler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="HOSPITALDataSet.xsc">
+      <DependentUpon>HOSPITALDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HOSPITALDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HOSPITALDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HOSPITALDataSet.xss">
+      <DependentUpon>HOSPITALDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
